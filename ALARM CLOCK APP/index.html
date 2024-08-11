@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="clock">
+        <h1 id="time"></h1>
+        <p id="date"></p>
+    </div>
+
+    <form id="alarmForm">
+        <label for="alarmTime">Set Alarm:</label>
+        <input type="time" id="alarmTime" required>
+
+        <label for="alarmTone">Choose Alarm Tone:</label>
+        <select id="alarmTone">
+            <option value="E:\Internship\CodSoft\Android App Development\tone 1.mp3">Tone 1</option>
+            <option value="E:\Internship\CodSoft\Android App Development\tone 2.mp3">Tone 2</option>
+            <!-- Add more tones as needed -->
+        </select>
+
+        <button type="submit">Set Alarm</button>
+    </form>
+
+    <div id="alarmsList"></div>
+
+    <div id="alarmActions" style="display: none;">
+        <button onclick="snoozeAlarm()">Snooze</button>
+        <button onclick="dismissAlarm()">Dismiss</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alarm Clock App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

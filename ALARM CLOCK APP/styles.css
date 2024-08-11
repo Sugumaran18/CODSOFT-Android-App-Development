@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#clock {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#alarmForm {
+    margin-bottom: 20px;
+}
+
+#alarmsList div {
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
